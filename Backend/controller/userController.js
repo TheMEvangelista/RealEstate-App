@@ -6,7 +6,7 @@ export const createUser = asyncHandler(async (req, res) => {
 
   let { email } = req.body;
 
-  const userExists = await prisma.user.findOne({where: {enail: email}})
+  const userExists = await prisma.user.findUnique({where: {email: email}})
   if(!userExists){
     const user = await prisma.user.create({data: req.body})
     res.send({
