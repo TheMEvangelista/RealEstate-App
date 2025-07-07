@@ -13,6 +13,10 @@ export const createUser = asyncHandler(async (req, res) => {
       message: "user registered sucessfully",
       user: user,
     });
+    if (!user) {
+      res.status(400);
+      throw new Error(`User email ${email} not founded`);
+    }
   } else {
     res.status(201).send({ message: "User already registered" });
   }
