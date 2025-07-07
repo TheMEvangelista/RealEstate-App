@@ -1,0 +1,17 @@
+{
+  "data": {
+    "title": "Apartamento Moderno com Vista para o Mar",
+    "description": "Apartamento espaçoso e totalmente mobiliado, com dois quartos, varanda ampla e vista deslumbrante para o mar. Próximo a mercados, restaurantes e transporte público.",
+    "price": 450000,
+    "address": "Avenida Atlântica, 1234",
+    "city": "Rio de Janeiro",
+    "country": "Brasil",
+    "image": "ajhdakjhdgadgaks",
+    "userEmail": "userOne@gmail.com",
+    "facilities": {
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "parkings": 1
+    }
+  }
+}
