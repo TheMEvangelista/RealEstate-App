@@ -31,7 +31,7 @@ export const bookVisit = asyncHandler(async (req, res) => {
   try {
     const alreadyBooked = await prisma.user.findUnique({
       where: { email },
-      select: { bookVisits: true },
+      select: { bookedVisits: true },
     });
 
     if (alreadyBooked.bookedVisits.some((visit) => visit.id === id)) {
