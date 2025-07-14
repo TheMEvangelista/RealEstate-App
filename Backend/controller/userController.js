@@ -40,7 +40,7 @@ export const bookVisit = asyncHandler(async (req, res) => {
       await prisma.user.update({
         where: { email: email },
         data: {
-          bookedVisits: { push: { id: id } },
+          bookedVisits: { push: { id, date } },
         },
       });
       res.send("Your visit is booked successfully");
@@ -49,3 +49,4 @@ export const bookVisit = asyncHandler(async (req, res) => {
     throw new Error(error.message);
   }
 });
+
