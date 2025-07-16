@@ -99,7 +99,7 @@ export const cancelBooking = asyncHandler(async (request, response) => {
 //Endpoint to add favorite residency
 //Test = Not completed
 
-export const toFav = asyncHandler(async (request, response) => {
+export const toFavorite = asyncHandler(async (request, response) => {
   const { email } = request.body;
   const { rid } = request.params;
 
@@ -134,3 +134,17 @@ export const toFav = asyncHandler(async (request, response) => {
   }
 });
 
+export const favorites = asyncHandler(async (request, response) => {
+  const { email } = request.body;
+
+  try {
+    const favResidences = await prisma.user.findUnique({
+      where: { email },
+      select: { favResidencesID: id },
+    });
+
+    response.status(200).send(favResidences);
+  } catch (error) {
+    throw new Error(error.message);
+  }
+});
