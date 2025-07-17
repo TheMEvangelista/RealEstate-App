@@ -1,5 +1,6 @@
 import express from "express";
 import {
+  allBookings,
   bookVisit,
   createUser,
   favorites,

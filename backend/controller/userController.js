@@ -52,7 +52,7 @@ export const bookVisit = asyncHandler(async (request, response) => {
   }
 });
 
-export const bookings = asyncHandler(async (request, response) => {
+export const allBookings = asyncHandler(async (request, response) => {
   const { email } = request.body;
 
   try {
