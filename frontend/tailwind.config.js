@@ -1,5 +1,6 @@
 import plugin from "tailwindcss/plugin";
 
+
 export const content = ["./src/**/*.{js,jsx,ts,tsx}"];
 /** @type {import('tailwindcss').Config} */
 
