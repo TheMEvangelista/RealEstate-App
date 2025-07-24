@@ -62,4 +62,19 @@ body {
   .active-link {
     @apply relative after:w-2/3 after:h-[2px] after:rounded-full after:bg-black after:absolute after:-bottom-2 after:left-0;
   }
+  .btn-white {
+    @apply medium-14 bg-white text-tertiary ring-1 ring-white px-7 py-2 rounded-lg;
+  }
+  
+  .btn-dark {
+    @pply medium-14 bg-tertiary text-white ring-1 ring-tertiary px-7 py-2 rounded-lg;
+  }
+  
+  .btn-light {
+    @apply medium-14 bg-primary ring-1 ring-primary px-7 py-2 rounded-lg transition-all duration-300;
+  }
+  
+  .btn-outline {
+    @apply medium-14 bg-white ring-1 ring-primary px-7 py-2 rounded-lg hover:bg-primary transition-all duration-300;
+  }
 }
