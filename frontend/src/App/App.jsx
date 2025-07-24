@@ -1,5 +1,11 @@
+import { Navbar } from "../components/Navbar";
+
 function App() {
-  return <div className="bg-blue-700 font-bold">Hello World!!!</div>;
+  return (
+    <main className="w-full flex flex-col">
+      <Navbar />
+    </main>
+  );
 }
 
 export default App;
