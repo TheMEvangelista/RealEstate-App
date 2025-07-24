@@ -1,10 +1,11 @@
-import { Navbar } from "../components/Navbar";
+import React from "react"
+import { Header} from "../components/Navbar";
 
 function App() {
   return (
-    <main className="w-full flex flex-col">
-      <Navbar />
-    </main>
+    <>
+      <Header />
+    </>
   );
 }
 
